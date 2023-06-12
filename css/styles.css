@@ -30,6 +30,8 @@ li {
   --color-pale-blue: hsl(221, 100%, 96%);
   --color-light-lavender: hsl(241, 100%, 89%);
   --color-dark-blue: hsl(224, 30%, 27%);
+
+  --font-size-paragraphs: 1.8rem;
 }
 
 html {
@@ -40,7 +42,7 @@ body {
   background: var(--color-white);
   margin: 0;
   font-family: 'Hanken Grotesk', sans-serif;
-  font-size: 1.8rem;
+  font-size: var(--font-size-paragraphs);
 }
 
 .container {
@@ -61,7 +63,8 @@ body {
 .card section {
   padding: 4rem;
   width: 36.8rem;
-  min-height: 51.2rem;
+  height: 100%;
+  max-height: 51.2rem;
 }
 
 .result {
@@ -95,7 +98,7 @@ body {
 .scored {
   font-size: 7.2rem;
   font-weight: 800;
-  color: var(--color-white)
+  color: var(--color-white);
 }
 
 .max-score {
@@ -213,5 +216,38 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+  :root {
+    --font-size-paragraphs: 1.4rem;
+  }
   
+  .card section {
+    padding: 3rem;
+  }
+
+  .card .title {
+    font-size: 1.8rem;
+  }
+
+  .circle {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .circle .scored {
+    font-size: 5.6rem;
+  }
+
+  .circle .max-score {
+    margin-top: 1rem;
+  }
+
+  .classification-rank {
+    font-size: 2.4rem;
+  }
+
+  .classification-text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 3rem;
+  }
 }
