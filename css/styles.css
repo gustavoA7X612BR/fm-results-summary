@@ -199,7 +199,7 @@ body {
   background: var(--gradient-blue-1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   .card {
     flex-direction: column;
     border-radius: 0;
