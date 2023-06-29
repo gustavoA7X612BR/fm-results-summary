@@ -139,6 +139,8 @@ body {
   justify-content: space-between;
   padding: 1.6rem;
   border-radius: 1.2rem;
+  background: hsla(234, 85%, 45%, 0.1);
+  color: var(--color-cobalt-blue);
 }
 
 .summary-items .icon {
@@ -160,24 +162,19 @@ body {
   font-weight: 700;
 }
 
-.summary-items li.reaction {
+.summary-items li:nth-child(4n - 3) {
   background:hsla(0, 100%, 67%, 0.1);
   color: var(--color-light-red);
 }
 
-.summary-items li.memory {
+.summary-items li:nth-child(4n - 2) {
   background:hsla(39, 100%, 56%, 0.1);
   color: var(--color-orange-yellow);
 }
 
-.summary-items li.verbal {
+.summary-items li:nth-child(4n - 1) {
   background: hsla(166, 100%, 37%, 0.1);
   color: var(--color-green-teal);
-}
-
-.summary-items li.visual {
-  background: hsla(234, 85%, 45%, 0.1);
-  color: var(--color-cobalt-blue);
 }
 
 .summary-button {
