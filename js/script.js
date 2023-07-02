@@ -19,7 +19,7 @@ function fillList(data) {
   data.forEach((item) => {
     const { category, score, icon } = item;
     const listItem = document.createElement('li');
-    listItem.innerHTML = `<img class="icon" src="${icon}" alt="">
+    listItem.innerHTML = `<img width="20" height="20" class="icon" src="${icon}" alt="">
     <p class="name">${category}</p>
     <p class="score"><span>${score}</span> / 100</p>`;
     const categoryLowerCase = category.toLowerCase();
