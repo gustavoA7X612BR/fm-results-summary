@@ -1,0 +1,72 @@
+.result {
+  background: $gradient-blue-1;
+  border-radius: inherit;
+  color: $color-dark-blue;
+  align-items: center;
+
+  .circle {
+    height: 20rem;
+    width: 20rem;
+    background: $gradient-blue-2;
+    border-radius: 50%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .scored {
+      font-size: 7.2rem;
+      font-weight: 800;
+      color: $color-white;
+    }
+    
+    .max-score {
+      margin-top: -1rem;
+      color: hsla(241, 100%, 89%, 0.5);
+    }
+  }
+
+  .classification-rank {
+    margin-top: 3rem;
+    color: $color-white;
+    font-weight: 700;
+    font-size: 3.1rem;
+  }
+  
+  .classification-text {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0 2rem;
+    color: $color-light-lavender;
+  }
+
+  @include device("tablet") {
+    border-radius: 0 0 32px 32px;
+  }
+
+  @include device("mobile") {
+    .circle {
+      width: 14rem;
+      height: 14rem;
+    }
+  
+    .circle .scored {
+      font-size: 5.6rem;
+    }
+  
+    .circle .max-score {
+      margin-top: 1rem;
+    }
+  
+    .classification-rank {
+      font-size: 2.4rem;
+    }
+  
+    .classification-text {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding: 0 3rem;
+    }
+  }
+}

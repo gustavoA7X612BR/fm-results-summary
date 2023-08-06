@@ -1,0 +1,78 @@
+.summary {
+  .title {
+    color: $color-dark-blue;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .summary-items {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 1.6rem;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      background: $color-pale-blue;
+      display: flex;
+      justify-content: space-between;
+      padding: 1.6rem;
+      border-radius: 1.2rem;
+      background: hsla(234, 85%, 45%, 0.1);
+      color: $color-cobalt-blue;
+    }
+
+    .icon {
+      user-select: none;
+      margin-right: 1.2rem;
+    }
+
+    .name {
+      margin-right: auto;
+    }
+
+    .score {
+      color: hsla(224, 30%, 27%, 0.5);
+    }
+    
+    .score span {
+      color: $color-dark-blue;
+      margin-right: 0.4rem;
+      font-weight: 700;
+    }
+
+    li:nth-child(4n - 3) {
+      background:hsla(0, 100%, 67%, 0.1);
+      color: $color-light-red;
+    }
+    
+    li:nth-child(4n - 2) {
+      background:hsla(39, 100%, 56%, 0.1);
+      color: $color-orange-yellow;
+    }
+    
+    li:nth-child(4n - 1) {
+      background: hsla(166, 100%, 37%, 0.1);
+      color: $color-green-teal;
+    }
+  }
+
+  .summary-button {
+    margin-top: auto;
+    display: block;
+    width: 100%;
+    height: 56px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.8rem;
+    background: $color-dark-blue;
+    color: $color-white;
+    border: none;
+    border-radius: 28px;
+    transition: 0.1s;
+    cursor: pointer;
+  
+    &:hover {
+      background: $gradient-blue-1;
+    }
+  }
+}
