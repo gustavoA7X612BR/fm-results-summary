@@ -1,6 +1,6 @@
 {
   "name": "results-summary",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "Results Summary component challenge from frontendmentor.io",
   "main": "index.js",
   "scripts": {
