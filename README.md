@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV/)
-- Live Site URL: [Add live site URL here](https://tranquil-raindrop-d8dd3e.netlify.app/)
+- Solution URL: [frontendmentor.io](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV/)
+- Live Site URL: [Netlify](https://tranquil-raindrop-d8dd3e.netlify.app/)
 
 ## My process
 
